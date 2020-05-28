@@ -110,40 +110,43 @@ function verificarVertical() {
     for (var c = 0, d=1, e=2; e <=6; e++) {
 
       if (uno[c]==uno[d]&&uno[d]==uno[e]) {
-        $(".col-1").find( "div" ).eq( c ).remove();
-        $(".col-1").find( "div" ).eq( d ).remove();
-        $(".col-1").find( "div" ).eq( e ).remove();
+        $(".col-1").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-1").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-1").find( "div" ).eq( e ).attr("class","borrar");
       };
       if (dos[c]==dos[d]&&dos[d]==dos[e]) {
-        $(".col-2").find( "div" ).eq( c ).remove();
-        $(".col-2").find( "div" ).eq( d ).remove();
-        $(".col-2").find( "div" ).eq( e ).remove();
+        $(".col-2").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-2").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-2").find( "div" ).eq( e ).attr("class","borrar");
       };
       if (tres[c]==tres[d]&&tres[d]==tres[e]) {
-        $(".col-3").find( "div" ).eq( c ).remove();
-        $(".col-3").find( "div" ).eq( d ).remove();
-        $(".col-3").find( "div" ).eq( e ).remove();
+        $(".col-3").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-3").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-3").find( "div" ).eq( e ).attr("class","borrar");
       };
       if (cuatro[c]==cuatro[d]&&cuatro[d]==cuatro[e]) {
-        $(".col-4").find( "div" ).eq( c ).remove();
-        $(".col-4").find( "div" ).eq( d ).remove();
-        $(".col-4").find( "div" ).eq( e ).remove();
+        $(".col-4").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-4").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-4").find( "div" ).eq( e ).attr("class","borrar");
       };
       if (cinco[c]==cinco[d]&&cinco[d]==cinco[e]) {
-        $(".col-5").find( "div" ).eq( c ).remove();
-        $(".col-5").find( "div" ).eq( d ).remove();
-        $(".col-5").find( "div" ).eq( e ).remove();
+        $(".col-5").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-5").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-5").find( "div" ).eq( e ).attr("class","borrar");
       };
       if (seis[c]==seis[d]&&seis[d]==seis[e]) {
-        $(".col-6").find( "div" ).eq( c ).remove();
-        $(".col-6").find( "div" ).eq( d ).remove();
-        $(".col-6").find( "div" ).eq( e ).remove();
+        $(".col-6").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-6").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-6").find( "div" ).eq( e ).attr("class","borrar");
       };
       if (siete[c]==siete[d]&&siete[d]==siete[e]) {
-        $(".col-7").find( "div" ).eq( c ).remove();
-        $(".col-7").find( "div" ).eq( d ).remove();
-        $(".col-7").find( "div" ).eq( e ).remove();
+        $(".col-7").find( "div" ).eq( c ).attr("class","borrar");
+        $(".col-7").find( "div" ).eq( d ).attr("class","borrar");
+        $(".col-7").find( "div" ).eq( e ).attr("class","borrar");
       };
+      $(".borrar").hide("pulsate",1400,function(){
+        $(".borrar").remove();
+      });
       c++;
       d++;
     }
@@ -164,29 +167,32 @@ function verificarHorizontal() {
     for (var cH = 0; cH <=6; cH++) {
 
       if (unoH[cH]==dosH[cH]&&unoH[cH]==tresH[cH]) {
-        $(".col-1").find( "div" ).eq( cH ).remove();
-        $(".col-2").find( "div" ).eq( cH ).remove();
-        $(".col-3").find( "div" ).eq( cH ).remove();
+        $(".col-1").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-2").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-3").find( "div" ).eq( cH ).attr("class","borrar2");
       };
       if (dosH[cH]==tresH[cH]&&dosH[cH]==cuatroH[cH]) {
-        $(".col-2").find( "div" ).eq( cH ).remove();
-        $(".col-3").find( "div" ).eq( cH ).remove();
-        $(".col-4").find( "div" ).eq( cH ).remove();
+        $(".col-2").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-3").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-4").find( "div" ).eq( cH ).attr("class","borrar2");
       };
       if (tresH[cH]==cuatroH[cH]&&tresH[cH]==cincoH[cH]) {
-        $(".col-3").find( "div" ).eq( cH ).remove();
-        $(".col-4").find( "div" ).eq( cH ).remove();
-        $(".col-5").find( "div" ).eq( cH ).remove();
+        $(".col-3").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-4").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-5").find( "div" ).eq( cH ).attr("class","borrar2");
       };
       if (cuatroH[cH]==cincoH[cH]&&cuatroH[cH]==seisH[cH]) {
-        $(".col-4").find( "div" ).eq( cH ).remove();
-        $(".col-5").find( "div" ).eq( cH ).remove();
-        $(".col-6").find( "div" ).eq( cH ).remove();
+        $(".col-4").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-5").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-6").find( "div" ).eq( cH ).attr("class","borrar2");
       };
       if (cincoH[cH]==seisH[cH]&&cincoH[cH]==sieteH[cH]) {
-        $(".col-5").find( "div" ).eq( cH ).remove();
-        $(".col-6").find( "div" ).eq( cH ).remove();
-        $(".col-7").find( "div" ).eq( cH ).remove();
+        $(".col-5").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-6").find( "div" ).eq( cH ).attr("class","borrar2");
+        $(".col-7").find( "div" ).eq( cH ).attr("class","borrar2");
       };
     }
+    $(".borrar2").hide("pulsate",1400,function(){
+      $(".borrar2").remove();
+    });
 };
