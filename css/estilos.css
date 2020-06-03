@@ -99,10 +99,19 @@ div[class^='col']{
 
 }
 
-.elemento{
+.fruta{
   width: 99.4px;
   height: 96px;
+}
 
+.borrar{
+  width: 99.4px;
+  height: 96px;
+}
+
+.borrar2{
+  width: 99.4px;
+  height: 96px;
 }
 
 .img{
